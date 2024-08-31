@@ -30,7 +30,7 @@ const ParticlesContainer = () => {
             mode: 'push',
           },
           onHover: {
-            enable: true,
+            enable: true, // true
             mode: 'repulse',
             
           },
@@ -41,33 +41,33 @@ const ParticlesContainer = () => {
             quantity: 90,
           },
           repulse: {
-            distance: 200,
-            duration: 0.4,
+            distance: 250,
+            duration: 0.6,
           },
         },
       },
       particles: {
         color: {
-          vaue: '#e68e2e',
+          value: '#e68e2e',
         },
         links: {
           color: '#f5d393',
           distance: 150,
-          enbale: true,
+          enable: true,
           opacity: 0.5,
           width: 1,
         },
         collisions: {
-          enabled: true
+          enable: true
         },
         move: {
           direction: 'none',
-          enabled: true,
+          enable: true,
           outModes: {
             default: 'bounce',
           },
           random: false,
-          speed: 1,
+          speed: 2,
           straight: false,
         },
         number: {
@@ -75,7 +75,7 @@ const ParticlesContainer = () => {
             enable: true,
             area: 800
           },
-          value: 80,
+          value: 90, // 80
         },
         opacity: {
           value: 0.5,
@@ -88,8 +88,8 @@ const ParticlesContainer = () => {
         },
       },
       detectRetina: true,
-        }
       }
+    }
 
       />
   );
