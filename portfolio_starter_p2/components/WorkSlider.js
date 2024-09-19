@@ -71,8 +71,6 @@ import {BsArrowRepeat, BsArrowRight} from 'react-icons/bs';
 // next Image
 import Image from 'next/image';
 
-// https://youtu.be/qp0-L_M3Ad4?t=8233
-
 const WorkSlider = () => {
   return (
     <Swiper 
@@ -81,7 +79,7 @@ const WorkSlider = () => {
       clickable: true,
     }}
     modules={[Pagination]}
-    className="h-[280px] sm:h-[480px]"
+    className="h-[480px]"
     >
       {
         workSlides.slides.map((slide, index) => {
